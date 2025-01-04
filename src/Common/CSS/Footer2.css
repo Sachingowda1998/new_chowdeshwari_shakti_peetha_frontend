@@ -1,0 +1,44 @@
+.footer-copyright{
+    text-align: center;
+    color: white;
+}
+
+.ourservices{
+    padding-left: 78px;
+}
+
+.quicklinks{
+    padding-left: 50px;
+}
+
+
+.blur-background {
+    background-image: url('/public/assetstwo/backgroundimages/footerback.jpeg');
+    /* background-size: cover;
+    background-position: center; */
+    background-Size: "100% 100%";
+    background-Position: "center";
+    background-Repeat: "no-repeat";
+    filter: blur(5px); 
+    color: white;
+    padding: 10px;
+    position: relative;
+    
+  }
+
+  footer {
+    position: relative; /* Ensures footer has its own stacking context */
+    z-index: 1; /* Lower than icons */
+  }
+  
+
+  .blur-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px); 
+    z-index: -1;
+  }

@@ -1,0 +1,19 @@
+.table td, .table th {
+    text-align: center;
+  }
+  
+  .table img {
+    border-radius: 8px;
+  }
+  
+  .btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .table td, .table th {
+      font-size: 12px;
+    }
+  }
+  

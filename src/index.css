@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+
+.scrollupsindex{
+  z-index: 50 !important;
+}
+
+
+.Puja-title {
+  color: #2c3e50;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.cartpageclassname-main .title-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  width: fit-content;
+}
+
+.cartpageclassname-main .title-main img {
+  margin-top: 1px;
+}
+
+/* devotee */
+/* 
+.devotees-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -15px; 
+  width: auto;
+}
+
+.masonry-grid_column {
+  padding-left: 15px; 
+  background-clip: padding-box;
+}
+
+.devotee-card {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.devotee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.devotee-card h3 {
+  margin: 0
+} */
+
+.devotees-container {
+  padding: 20px;
+  background-color: #eaf3f9;
+  height: 350px;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -15px;
+}
+
+.masonry-grid_column {
+  padding-left: 15px;
+  background-clip: padding-box;
+}
+
+.devotee-card {
+  background: #ffffff;
+  border: 2px solid #c8d6e5;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.devotee-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.devotee-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1e3799;
+}
+
+.devotee-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #576574;
+}
+
+.devotee-card p strong {
+  color: #1e3799;
+}

@@ -1,0 +1,52 @@
+.check-user .btn-custom {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.check-user .btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.check-user .form-control-custom {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.check-user .table-custom {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.check-user .table-custom th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.check-user .table-custom td {
+  font-size: 14px;
+}
+
+.check-user .text-danger {
+  color: red;
+}
+
+.check-user .text-info {
+  color: #17a2b8;
+}
+
+.check-user .cursor-pointer {
+  cursor: pointer;
+}
+
+.check-user .font-weight-bold {
+  font-weight: 700;
+}
+
+.check-user .text-primary {
+  color: #007bff;
+}

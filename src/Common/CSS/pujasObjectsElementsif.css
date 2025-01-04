@@ -1,0 +1,35 @@
+
+.form-check-input {
+    border-color: #7b1fa2 !important;
+  }
+  
+  .ObjectDetailsClassname .card-text {
+    text-align: justify;
+  }
+  
+  .highlight-time {
+    color: #ff6347;
+    font-weight: bold;
+  }
+  
+  .highlight-price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .column-text-color p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .column-text-color {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .column-text-color td {
+    vertical-align: top;
+    padding: 8px 10px;
+  }
+  

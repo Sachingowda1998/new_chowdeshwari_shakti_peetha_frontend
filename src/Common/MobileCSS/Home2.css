@@ -1,0 +1,86 @@
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home2-talktoastoguru-main .talkoastoguru-child {
+      width: 100%;
+      right: 0;
+      bottom: 5% !important;
+      padding: 0 10px; 
+      text-align: center !important; 
+    }
+  
+    .home2-talktoastoguru-main .talkoastoguru-child h3 {
+      font-size: 1.5rem !important; 
+    }
+  
+    .home2-talktoastoguru-main .talkoastoguru-child h6 {
+      margin-top: 0 !important;
+      font-size: 1rem !important; 
+    }
+  
+    .home2-talktoastoguru-main .talkoastoguru-child button {
+      width: 50%;
+      padding: 12px 0; 
+      font-size: 1rem; 
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home2-talktoastoguru-main .talkoastoguru-child {
+      bottom: 4% !important; 
+    }
+  
+    .home2-talktoastoguru-main .talkoastoguru-child h3 {
+      font-size: 1.2rem !important; 
+    }
+  
+    .home2-talktoastoguru-main .talkoastoguru-child h6 {
+      font-size: 0.9rem !important; 
+    }
+  
+    .home2-talktoastoguru-main .talkoastoguru-child button {
+      padding: 10px 0 !important; 
+      font-size: 15px;
+    }
+  }
+
+  .merienda {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-size: 33px !important;
+    font-style: normal;
+  }
+
+
+  /* title and image */
+  /* Mobile devices (width up to 480px) */
+@media (max-width: 480px) {
+  .puja-categories-main-section .title-main h3 {
+
+    font-size: 26px !important;
+    text-transform: capitalize;
+ 
+
+
+    
+  }
+
+ 
+
+  .puja-categories-main-section .title-main img {
+    width: 200px !important; 
+  }
+}
+
+/* Tablets (width up to 768px) */
+@media (max-width: 768px) {
+  .puja-categories-main-section .title-main h3 {
+    font-size: 24px !important; 
+    
+  }
+  .puja-categories-main-section .title-main img {
+    width: 220px !important; 
+  }
+}

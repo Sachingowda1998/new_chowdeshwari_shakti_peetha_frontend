@@ -1,0 +1,38 @@
+.IdelsObjectsLoopClassname .red-background {
+    background-color: #ff9933 !important;
+  }
+  
+  .IdelsObjectsLoopClassname .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .IdelsObjectsLoopClassname{
+    background-color: rgb(255 99 71 / 19%);
+  }
+  
+  .IdelsObjectsLoopClassname .card-subtitle {
+    height: 20px;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+
+.IdelsObjectsLoopClassname  .idolsshopsbuttons{
+    display: flex;
+  }
+
+.IdelsObjectsLoopClassname  .idolsshopsbutn-section1{
+    justify-content: start;
+    text-align: left;
+    padding: 0;
+  }
+
+.IdelsObjectsLoopClassname  .idolsshopsbutn-section2{
+    justify-content: end;
+    text-align: end;
+    padding: 0;
+  }

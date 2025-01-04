@@ -1,0 +1,95 @@
+/* Mobile screens */
+@media (max-width: 767px) {
+  .subscribe-classname .subscribe-heading {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .subscribe-classname .subscribe-title img {
+    width: 120px; /* Reduce underline size for smaller screens */
+  }
+
+  .test-inner-body {
+    flex-direction: column;
+    padding: 10px; 
+    height: 100% !important;
+  }
+
+  .test-child-class {
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 2% !important;
+    padding: 10px; 
+  }
+
+  .test-inner-image {
+    width: 100%;
+    height: 100% auto; 
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+    text-align: center; /* Center align titles for better readability */
+  }
+
+  .lead,
+  .font-weight-bold {
+    font-size: 1rem;
+    text-align: center; /* Center align subtitles and descriptions */
+  }
+
+  .subscribe-classname img.test-image-class {
+    height: 600px !important; 
+  }
+
+ 
+}
+
+/* Tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .subscribe-classname .subscribe-heading {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .subscribe-classname .subscribe-title img {
+    width: 150px;
+  }
+
+  .test-inner-body {
+    flex-direction: row;
+    padding: 12px; 
+    height: 100% !important;
+  }
+
+  .test-child-class {
+    top: 8%;
+    left: 10%;
+    right: 10%;
+    bottom: 8% ;
+    padding: 15px;
+  }
+
+  .test-inner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  .font-weight-bold {
+    font-size: 1.2rem;
+  }
+
+  .subscribe-classname img.test-image-class {
+    height: 400px;
+  }
+}

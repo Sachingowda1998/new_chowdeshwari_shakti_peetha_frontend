@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Dancing+Script:wght@400..700&family=Delius&family=Edu+AU+VIC+WA+NT+Pre&family=Indie+Flower&family=Itim&family=Kalam:wght@300;400;700&family=Lemonada:wght@300..700&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+IN+Guides&display=swap');
+
+
+.tades-main-section .tades-title {
+    text-align: center;
+  }
+  
+  .tades-main-section .tades-heading {
+    font-size: 28px;
+    font-family: 'Merienda One', cursive;
+  }
+  
+  .tades-main-section .tades-card-wrapper {
+    padding: 30px;
+  }
+  
+  .tades-main-section .tades-card {
+    background: inherit !important;
+    padding: 0 !important;
+    border: none !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tades-main-section .tades-card-body {
+    background: white !important;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .tades-main-section .tades-card-title {
+    text-align: start !important;
+    margin-top: 10px !important;
+    margin-bottom: 0;
+    font-size: 18px !important;
+    color: #010101 !important;
+    line-height: 24px !important;
+    font-weight: 380 !important;
+  }
+  
+  .tades-main-section .card-title {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .tades-main-section .card-body {
+    padding: 0px 0px 10px 4px !important;
+  }
+  
+  .tades-main-section .tades-card-image-wrapper {
+    height: 330px;
+  }
+  
+  .tades-main-section .tades-card-img {
+    height: 100%;
+  }
+  
+  .tades-main-section .tades-card-price {
+    font-size: 16px;
+    font-family: "Lemonada", cursive;
+    font-weight: 500;
+    color: #ff6600;
+    margin-top: 3px;
+    text-align: start;
+  }
+  
+  .tades-main-section .tades-back-main {
+    background-color: #ff9933;
+    background-image: url("/public/assetstwo/backgroundimages/sectionbackground.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    height: 100%;
+  }
+  
+  .tades-main-section .react-multiple-carousel__arrow--right {
+    right: 2px !important;
+  }
+  
+  .tades-main-section .react-multiple-carousel__arrow--left {
+    left: 2px !important;
+  }
+  
+  @media (max-width: 480px) {
+    .tades-main-section .react-multiple-carousel__arrow--right {
+      right: calc(4% + 1px) !important;
+    }
+  
+    .tades-main-section .react-multiple-carousel__arrow--left {
+      left: calc(4% + 1px) !important;
+    }
+  }
+  

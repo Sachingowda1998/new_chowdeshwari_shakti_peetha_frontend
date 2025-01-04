@@ -1,0 +1,164 @@
+.sectionTwoclassname .carousel-image {
+  height: 200px;
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-justify-custom {
+  text-align: justify;
+}
+
+.sectionTwoclassname .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sectionTwoclassname .card-title,
+.sectionTwoclassname .card-price {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sectionTwoclassname .card-price {
+  font-weight: bold;
+  margin-top: auto; /* Ensure the price is at the bottom */
+}
+
+.sectionTwoclassname .card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.sectionTwoclassname .card-text {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.orange-box {
+  height: 200px;
+  background-color: rgb(255, 153, 51) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.viewall-btn-section2 {
+  float: right;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.sectionTwoclassname .card-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.btn-view {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view:hover {
+  background-color: #218838;
+}
+
+.sectionTwoclassname .card-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.btn-view {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view:hover {
+  background-color: #218838;
+}
+
+.testcomponentclassname {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.testcomponentclassname .testsection1 {
+  border: 1px solid black;
+  width: 120px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testcomponentclassname .testsection2 {
+  /* margin: 5px; */
+  width: 105px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  background-color: #28a745;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .testcomponentclassname .testsection1 {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testcomponentclassname .testsection2 {
+    width: 110px;
+    height: 35px;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testcomponentclassname .testsection1 {
+    width: 100px;
+    height: 35px;
+  }
+
+  .testcomponentclassname .testsection2 {
+    margin: 3px;
+    width: 90px;
+    height: 30px;
+    font-size: small;
+  }
+}
+
+.sectionTwoclassname .react-multiple-carousel__arrow--right {
+  right: 1px !important;
+  /* right: calc(1% + 1px) !important; */
+}
+
+.sectionTwoclassname .react-multiple-carousel__arrow--left {
+  left: 1px !important;
+  /* left: calc(1% + 1px) !important; */
+}

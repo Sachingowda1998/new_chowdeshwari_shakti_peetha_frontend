@@ -1,0 +1,21 @@
+.homeclassname .home-talktoastrobtn{
+    background-Color: "#fdbb2d";
+    color: "#1a2a6c";
+    font-Size: "18px";
+    padding: "12px 30px";
+    border: "none";
+    border-Radius: "5px";
+    cursor: "pointer";
+    position: "absolute";
+    right: "30px";
+    top: "80%"; 
+    transform: "translateY(-50%)"; 
+    box-Shadow: "0 4px 8px rgba(0; 0, 0, 0.2)";
+    z-Index: "10"; 
+}
+
+@media (max-width) {
+    .homeclassname .home-talktoastrobtn{
+    top: 90%;
+    }
+}

@@ -1,0 +1,51 @@
+.navbarclassname .navlinkscstome {
+    color: rgba(233, 131, 0, 1);
+    font-size: 21px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    /* border: 1px solid black; */
+    border-radius: 2px;
+    margin-left: 10px;
+    height: 60px;
+    padding-top: 10px;
+  }
+  
+  .navbarclassname .navlinkscstome:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .navbarclassname .navItem img {
+    max-height: 50px;
+    margin-right: 10px;
+   
+  }
+  
+  .navbarclassname .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbarclassname .navWrapper {
+    padding-top: 10px; 
+    
+  }
+  
+  #navtab-background{
+    /* background-image: linear-gradient(yellow,orange); */
+    background-color: #dff1f36b;
+  }
+  
+  
+  
+  .navbarclassname img {
+  
+    padding: 5px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+  
+  
+  
+  
+  

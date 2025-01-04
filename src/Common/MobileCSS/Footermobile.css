@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+  .ourservices {
+    padding-left: 6px !important;
+  }
+
+  .quicklinks {
+    padding-left: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourservices {
+    padding-left: 10px !important;
+  }
+
+  .quicklinks {
+    padding-left: 10px !important;
+  }
+}

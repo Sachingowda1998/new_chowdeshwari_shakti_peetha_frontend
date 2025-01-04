@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .filtercategories {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .filtercategories {
+    display: flex !important;
+  }
+}

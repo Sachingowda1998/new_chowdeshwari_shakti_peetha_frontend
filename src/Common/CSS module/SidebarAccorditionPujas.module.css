@@ -1,0 +1,11 @@
+.cardbodyitems {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .cardbodyitems:hover {
+    color: #D2691E;
+    text-decoration: underline;
+  }

@@ -1,0 +1,21 @@
+
+
+
+  @media (max-width: 768px) {
+    .devotee-container {
+        height: 300px;
+    }
+    .devotee-container .carousel-root {
+        height: 100% !important;
+    }
+    .devotee-paragraph {
+        font-size: 13px
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .devotee-container .carousel-root {
+     
+    }
+  }
+  

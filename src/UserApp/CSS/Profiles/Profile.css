@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Alumni+Sans+Pinstripe:ital@0;1&family=Cookie&family=Dancing+Script:wght@400..700&family=Delius&family=Edu+AU+VIC+WA+NT+Pre&family=Gowun+Dodum&family=Iceland&family=Indie+Flower&family=Itim&family=Kalam:wght@300;400;700&family=Lemonada:wght@300..700&family=Merienda:wght@300..900&family=Pacifico&family=Parisienne&family=Playwrite+IN+Guides&family=Rubik+Dirt&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&family=Tulpen+One&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.profile-container {
+    margin-top: 20px;
+    border: 1px solid #0c0c0c23;
+    border-radius: 10px;
+  }
+  
+  /* .profile-container:hover {
+    border: 1px solid #0097a7;
+  } */
+  
+  .profile-image-col {
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-text-col {
+    padding: 20px;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+    color: #2c3e50;
+ 
+    font-family: "Sour Gummy", sans-serif;
+  }
+  
+  .profile-description {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .read-more-btn {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .read-more-btn:hover {
+    color: #2980b9;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .profile-name {
+      font-size: 1.5rem;
+    }
+  
+    .profile-description {
+      font-size: 1rem;
+    }
+  
+    .profile-image {
+      max-width: 150px;
+    }
+  }
+  

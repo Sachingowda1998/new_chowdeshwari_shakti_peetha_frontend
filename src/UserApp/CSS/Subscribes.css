@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre&family=Indie+Flower&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+IN+Guides&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Dancing+Script:wght@400..700&family=Delius&family=Edu+AU+VIC+WA+NT+Pre&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+IN+Guides&display=swap");
+
+.font-weight-bold {
+  font-family: "Kalam", cursive;
+}
+
+.display-4 {
+  color: black;
+  font-family: "Pacifico", cursive;
+  font-weight: 200 !important;
+  font-size: medium;
+}
+
+.test-inner-body {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffaa42;
+  padding: 14px;
+  height: 500px;
+}
+
+.test-image-class {
+  height: 520px !important;
+  width: 100%;
+  flex: 1;
+  position: relative;
+  /* width: "100%";
+  height: "520px" !important;
+  object-fit: "cover"; */
+}
+
+.test-child-class {
+  position: absolute !important;
+  top: 2% !important;
+  left: 11% !important;
+  right: 11% !important;
+  bottom: 2% !important;
+}
+
+.test-inner-image {
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  height: 100% !important;
+}
+
+/* @media (max-width: 767px) {
+  .test-inner-body {
+    flex-direction: column;
+  }
+
+  .test-child-class {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+  }
+
+  .test-inner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .font-weight-bold {
+    font-size: 1.1rem;
+  }
+} */
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .test-inner-body {
+    flex-direction: row;
+  }
+
+  .test-child-class {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    bottom: 10%;
+  }
+
+  .test-inner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  .font-weight-bold {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .test-inner-body {
+    flex-direction: row;
+  }
+
+  .test-child-class {
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    right: 11%;
+    bottom: 2%;
+  }
+
+  .test-inner-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.4rem;
+  }
+
+  .font-weight-bold {
+    font-size: 1.3rem;
+  }
+}
+
+.subscribe-classname .subscribe-title {
+  text-align: center;
+}
+
+.subscribe-classname .subscribe-heading {
+  font-size: 33px;
+  font-family: "Merienda One", cursive;
+  color: #ff6600;
+  margin-bottom: 0 !important;
+}
+
+.subscribe-classname .subscribe-title img {
+  padding-bottom: 10px;
+}

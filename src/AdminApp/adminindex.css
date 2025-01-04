@@ -1,0 +1,44 @@
+/* Customize the sidebar's appearance */
+.offcanvas-start {
+  width: 250px;
+}
+
+.transition-width {
+  transition: width 0.3s ease-in-out;
+}
+
+/* .sidebarcollapsed {
+  width: 80px !important;
+} */
+
+/* Sidebar styles */
+.sidebarcollapsed {
+  width: 80px; /* Collapsed width */
+  transition: width 0.3s ease-in-out; /* Smooth transition when collapsed */
+}
+
+.sidebarexpanded {
+  width: 200px; /* Expanded width */
+  transition: width 0.3s ease-in-out; /* Smooth transition when expanded */
+}
+
+/* Sidebar collapsed and expanded width */
+.sidebarcollapsed {
+  width: 80px; /* Sidebar width when collapsed */
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebarcollapsedNotfombutonn {
+  width: 250px; /* Sidebar width when expanded */
+  transition: width 0.3s ease-in-out;
+}
+
+.check-user {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}

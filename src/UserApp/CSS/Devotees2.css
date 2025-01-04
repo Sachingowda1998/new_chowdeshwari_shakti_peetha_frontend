@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Indie+Flower&family=Merienda:wght@300..900&family=Playwrite+IN+Guides&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre&family=Indie+Flower&family=Merienda:wght@300..900&family=Playwrite+IN+Guides&display=swap");
+/* Test.css */
+.devotee-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin: 20px;
+  background-image: url("/public/assetstwo/backgroundimages/devotee.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 260px;
+
+  /* text-align: center; */
+}
+
+.devotee-container .carousel-root {
+  background-color: white !important;
+  padding-top: 20px !important;
+  height: 220px !important;
+}
+
+.devotee-heading {
+  font-size: 24px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  color: black;
+  font-family: "Indie Flower", cursive;
+}
+
+.devotee-paragraph {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.6;
+  /* font-family: "Edu AU VIC WA NT Pre", cursive; */
+  margin: 10px 0;
+  color: black;
+}
+
+.devotee-author {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+}
+
+/* .devotee-carousel {
+  padding-top: 20px !important;
+  background-color: white !important;
+  height: 220px;
+} */
+
+.devotee-container .carousel .control-dots .dot {
+  color: black !important;
+  background-color: blue !important;
+}
+.devotee-container .carousel .slider-wrapper {
+  height: 200px !important;
+}

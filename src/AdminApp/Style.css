@@ -1,0 +1,183 @@
+.chevron-icon {
+  font-size: 16px;
+  color: black;
+}
+
+.sidebar .main-settings-text {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar .brand-name {
+  font-weight: 700;
+  color: #1abc9c;
+  margin-left: 35px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.list-group-item:hover {
+  background-color: #16a085;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-group-item i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #d8eef3;
+}
+
+.list-group-item span {
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.list-group-item:hover span {
+  opacity: 0.1;
+}
+
+.sidebar .settings-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar .main-settings-icon {
+  font-size: 20px;
+  margin-left: 11px;
+  color: #d8eef3;
+}
+
+.sidebar .settings-item span {
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 500;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar .settings-item:hover {
+  background-color: #16a085;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* 
+.sidebar-header .close-btn {
+  font-size: 22px !important;
+  color: #ecf0f1 !important; 
+  cursor: pointer !important;
+  transition: color 0.3s ease;
+}
+
+.sidebar-header .close-btn:hover {
+  color: #e74c3c !important; 
+} */
+
+/* .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+ 
+  padding: 20px 15px;
+  background-color: #2d3436; 
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  color: #ecf0f1; 
+  border-right: 2px solid #34495e; 
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1abc9c; 
+  margin-bottom: 20px;
+}
+
+.sidebar-header i {
+  font-size: 22px;
+  color: #ecf0f1; 
+  cursor: pointer;
+}
+
+.sidebar-header .brand-name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ecf0f1; 
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+
+.list-group-item:hover {
+  background-color: #16a085; 
+  color: white; 
+  cursor: pointer;
+  border-radius: 4px; 
+}
+
+.list-group-item i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #ecf0f1; 
+}
+
+
+.list-group-item span {
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+.list-group-item:hover span {
+  opacity: 0.9;
+}
+
+
+.sidebar-header .close-btn {
+  font-size: 22px;
+  color: #ecf0f1; 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar-header .close-btn:hover {
+  color: #e74c3c; 
+}
+
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+
+.transition-width {
+  transition: width 0.3s ease-in-out;
+} */

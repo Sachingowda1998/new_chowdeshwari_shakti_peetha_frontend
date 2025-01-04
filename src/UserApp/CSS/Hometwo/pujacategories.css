@@ -1,0 +1,82 @@
+.homeclassname .home-section2 {
+    background-color: #ff9933;
+  
+    background-image: url("/public/assetstwo/backgroundimages/categories.jpg");
+  
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+  
+  .franco-heading h3 {
+    font-size: 24px;
+    margin-top: 24px;
+    position: relative;
+    letter-spacing: 3px;
+  
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 700;
+  }
+  
+  .franco-heading h3::before {
+    background: #ff6600 none repeat scroll 0 0;
+    bottom: -27px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50px;
+  }
+  
+  .homeclassname .text-center {
+    text-align: center;
+  }
+  
+  .homeclassname .franco-heading {
+    margin-bottom: 28px;
+  }
+  
+  .homeclassname .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .homeclassname .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .homeclassname .col {
+    width: 19%;
+    text-align: center;
+  }
+  
+  .homeclassname .col img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .homeclassname .col a {
+    text-decoration: none;
+    color: #010101 !important;
+    
+  }
+  
+  .homeclassname .col p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Open Sans", Arial;
+    color: #010101 !important;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  
