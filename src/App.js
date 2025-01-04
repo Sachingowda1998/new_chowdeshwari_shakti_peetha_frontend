@@ -6,21 +6,16 @@ import Login from './Common/login';
 import AdminApp from './AdminApp/AdminApp';
 import UserApp from './UserApp/UserApp';
 import HomeAppGeneral from './Common/homeappgeneral';
-import { useNavigate } from 'react-router-dom';
+
 
 // PrivateRoute Component
 const PrivateRoute = ({ children, role }) => {
-    const token = Cookies.get('userToken');
-    const loginType = Cookies.get('loginType'); // Assuming backend sends this value
+    // const token = Cookies.get('userToken');
+    // const loginType = Cookies.get('loginType');
 
-            // Debugging line to check the value of loginType cookie
-            console.log('from app.js, loginType:', Cookies.get('loginType'));
+    const loginType = localStorage.getItem('loginType');
 
-            // Debugging line to check the value of loginType cookie
-            console.log('from app.js, userToken:', Cookies.get('userToken'));
-
-
-    if (!token) {
+    if (!loginType) {
         return <Navigate to="/" replace />;
     }
 

@@ -20,11 +20,10 @@ const Login = () => {
 
             const result = await response.json();
             if (response.ok) {
-                console.log("Response OK");
                 // Cookies.set('userToken', result.token, { httpOnly: true });
-                Cookies.set('loginType', result.loginType, { secure: process.env.NODE_ENV === 'production', sameSite: 'None' });
-                        // Debugging line to check the value of loginType cookie
-                        console.log('from login page, loginType:', Cookies.get('loginType'));
+                // Cookies.set('loginType', result.loginType, { httpOnly: true });
+                // Save loginType in localStorage (as it's not sensitive)
+                localStorage.setItem('loginType', result.loginType);
                 Swal.fire('Success', result.message, 'success')
                 const destination = result.loginType === 'admin' ? '/admin' : '/user';
                 navigate(destination); // Navigate to the respective panel
