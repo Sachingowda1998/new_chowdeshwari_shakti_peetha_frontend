@@ -22,6 +22,8 @@ const Login = () => {
             if (response.ok) {
                 // Cookies.set('userToken', result.token, { httpOnly: true });
                 Cookies.set('loginType', result.loginType, { secure: process.env.NODE_ENV === 'production', sameSite: 'None' });
+                        // Debugging line to check the value of loginType cookie
+                        console.log('from login page, loginType:', Cookies.get('loginType'));
                 Swal.fire('Success', result.message, 'success')
                 const destination = result.loginType === 'admin' ? '/admin' : '/user';
                 navigate(destination); // Navigate to the respective panel
