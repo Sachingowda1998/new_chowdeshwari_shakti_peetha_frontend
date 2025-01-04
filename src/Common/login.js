@@ -20,6 +20,7 @@ const Login = () => {
 
             const result = await response.json();
             if (response.ok) {
+                console.log("Response OK");
                 // Cookies.set('userToken', result.token, { httpOnly: true });
                 Cookies.set('loginType', result.loginType, { secure: process.env.NODE_ENV === 'production', sameSite: 'None' });
                         // Debugging line to check the value of loginType cookie

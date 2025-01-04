@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 
 const HomeAppGeneral = () => {
-
+    console.log('HomeAppGeneral Component Loaded'); // Add this line to ensure the component is rendered
     // const loginType = Cookies.get('loginType');
     const [loginType, setLoginType] = useState(Cookies.get('loginType'));
 

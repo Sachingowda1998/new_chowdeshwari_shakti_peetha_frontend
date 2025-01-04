@@ -13,6 +13,13 @@ const PrivateRoute = ({ children, role }) => {
     const token = Cookies.get('userToken');
     const loginType = Cookies.get('loginType'); // Assuming backend sends this value
 
+            // Debugging line to check the value of loginType cookie
+            console.log('from app.js, loginType:', Cookies.get('loginType'));
+
+            // Debugging line to check the value of loginType cookie
+            console.log('from app.js, userToken:', Cookies.get('userToken'));
+
+
     if (!token) {
         return <Navigate to="/" replace />;
     }
