@@ -37,7 +37,8 @@ function Header({ Toggle }) {
   };
 
   const logout = () => {
-    localStorage.removeItem('loginType');  
+    Cookies.remove('userToken');
+    Cookies.remove('loginType');
     navigate('/');
 };
 

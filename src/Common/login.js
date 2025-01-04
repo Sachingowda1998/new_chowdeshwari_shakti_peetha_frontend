@@ -20,10 +20,21 @@ const Login = () => {
 
             const result = await response.json();
             if (response.ok) {
-                // Cookies.set('userToken', result.token, { httpOnly: true });
-                // Cookies.set('loginType', result.loginType, { httpOnly: true });
+                    // Store the userToken in a non-HttpOnly cookie (no security measures)
+    Cookies.set('userToken', result.token, {
+        secure: false,    // Set to false because you're not using HTTPS
+        sameSite: 'None', // For cross-origin requests
+        path: '/'          // Accessible across the entire domain
+    });
+
+    // Optionally, store loginType in a cookie as well
+    Cookies.set('loginType', result.loginType, {
+        secure: false,    // Set to false because you're not using HTTPS
+        sameSite: 'None', // For cross-origin requests
+        path: '/'          // Accessible across the entire domain
+    });
                 // Save loginType in localStorage (as it's not sensitive)
-                localStorage.setItem('loginType', result.loginType);
+                // localStorage.setItem('loginType', result.loginType);
                 Swal.fire('Success', result.message, 'success')
                 const destination = result.loginType === 'admin' ? '/admin' : '/user';
                 navigate(destination); // Navigate to the respective panel

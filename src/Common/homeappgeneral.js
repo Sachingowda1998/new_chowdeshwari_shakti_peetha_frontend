@@ -6,7 +6,7 @@ import HomeApp from './homeapp';
 
 const HomeAppGeneral = () => {
     
-    const loginType = localStorage.getItem('loginType');
+    const loginType = Cookies.get('loginType');
 
     // If cookie is not present, redirect to the home page ("/")
     if (loginType === undefined) {

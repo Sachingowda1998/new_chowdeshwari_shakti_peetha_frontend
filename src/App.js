@@ -10,12 +10,10 @@ import HomeAppGeneral from './Common/homeappgeneral';
 
 // PrivateRoute Component
 const PrivateRoute = ({ children, role }) => {
-    // const token = Cookies.get('userToken');
-    // const loginType = Cookies.get('loginType');
+    const token = Cookies.get('userToken');
+    const loginType = Cookies.get('loginType');
 
-    const loginType = localStorage.getItem('loginType');
-
-    if (!loginType) {
+    if (!token) {
         return <Navigate to="/" replace />;
     }
 
