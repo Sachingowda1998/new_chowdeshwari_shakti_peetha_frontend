@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -15,15 +14,13 @@ const Login = () => {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
-                credentials: 'include', // Important for cookies
+                // credentials: 'include', // Important for cookies
             });
 
             const result = await response.json();
             if (response.ok) {
-                // Cookies.set('userToken', result.token);
-                // Cookies.set('loginType', result.loginType);
-                // Save loginType in localStorage (as it's not sensitive)
-                // localStorage.setItem('loginType', result.loginType);
+                localStorage.setItem('userToken', result.token);
+                localStorage.setItem('loginType', result.loginType);
                 Swal.fire('Success', result.message, 'success')
                 const destination = result.loginType === 'admin' ? '/admin' : '/user';
                 navigate(destination); // Navigate to the respective panel

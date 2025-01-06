@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 import HomeApp from './Common/homeapp';
 import Login from './Common/login';
 import AdminApp from './AdminApp/AdminApp';
@@ -10,8 +9,8 @@ import HomeAppGeneral from './Common/homeappgeneral';
 
 // PrivateRoute Component
 const PrivateRoute = ({ children, role }) => {
-    const token = Cookies.get('userToken');
-    const loginType = Cookies.get('loginType');
+    const token = localStorage.getItem("userToken");
+    const loginType = localStorage.getItem("loginType");
 
     if (!token) {
         return <Navigate to="/" replace />;

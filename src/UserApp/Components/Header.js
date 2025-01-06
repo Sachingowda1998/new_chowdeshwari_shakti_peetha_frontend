@@ -30,8 +30,8 @@ function Header() {
   };
 
     const logout = () => {
-      Cookies.remove('userToken');
-      Cookies.remove('loginType');
+      localStorage.removeItem('userToken');
+      localStorage.removeItem("loginType");
       navigate('/');
   };
 

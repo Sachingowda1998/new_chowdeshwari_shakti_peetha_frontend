@@ -1,4 +1,3 @@
-import Cookies from 'js-cookie';
 import { Navigate } from 'react-router-dom';
 import HomeApp from './homeapp';
 
@@ -6,7 +5,7 @@ import HomeApp from './homeapp';
 
 const HomeAppGeneral = () => {
     
-    const loginType = Cookies.get('loginType');
+    const loginType = localStorage.getItem("loginType");
 
     // If cookie is not present, redirect to the home page ("/")
     if (loginType === undefined) {
