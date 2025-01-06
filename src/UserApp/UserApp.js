@@ -173,9 +173,9 @@ function UserApp() {
           <ChatIcon />
         </>
 
-        <div className="fixed z-50 p-4 bg-white rounded shadow-lg bottom-40 right-4">
+        {/* <div className="fixed z-50 p-4 bg-white rounded shadow-lg bottom-40 right-4"> */}
           {/* <ChatBot setShowChatbot={setShowChatbot}/> */}
-        </div>
+        {/* </div> */}
 
         {/* <Footer /> */}
         <Footer2 />

@@ -11,36 +11,36 @@ const Footer2 = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchContactsAndSocialMedia = async () => {
-      try {
-        const [contactsResponse, socialMediaResponse] = await Promise.all([
-          axios.get("http://localhost:8000/api/contacts"),
-          // axios.get("http://localhost:8000/api/social-media"),
-        ]);
+  // useEffect(() => {
+  //   const fetchContactsAndSocialMedia = async () => {
+  //     try {
+  //       const [contactsResponse, socialMediaResponse] = await Promise.all([
+  //         axios.get("http://localhost:8000/api/contacts"),
+  //         // axios.get("http://localhost:8000/api/social-media"),
+  //       ]);
 
-        setContacts(contactsResponse.data);
-        // setSocialMediaLinks(socialMediaResponse.data);
-        setLoading(false);
-      } catch (err) {
-        setError("Error fetching data. Please try again later.");
-        console.log(err, "footer");
-        setLoading(false);
-      }
-    };
+  //       setContacts(contactsResponse.data);
+  //       // setSocialMediaLinks(socialMediaResponse.data);
+  //       setLoading(false);
+  //     } catch (err) {
+  //       setError("Error fetching data. Please try again later.");
+  //       console.log(err, "footer");
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchContactsAndSocialMedia();
-  }, []);
-  if (loading) return <p>Loading data...</p>;
-  if (error) return <p>{error}</p>;
+  //   fetchContactsAndSocialMedia();
+  // }, []);
+  // if (loading) return <p>Loading data...</p>;
+  // if (error) return <p>{error}</p>;
 
   return (
     <footer
-      className="bg-dark text-light pt-5 pb-1 position-relative"
+      className="text-light pt-5 pb-1"
       style={{
         backgroundImage: `url('assetstwo/backgroundimages/footerback.jpeg')`,
         backgroundSize: "100% 100%",
-        backgroundPosition: "center",
+        backgroundPosition: "cover",
         backgroundRepeat: "no-repeat",
       }}
     >
@@ -67,6 +67,8 @@ const Footer2 = () => {
               Jyotisham for 10 years in Mahavidyalay and with 20+ years of
               practice in Astrology.
             </p>
+
+
             {/* <div className="mt-4">
               <h5>Follow Us</h5>
               <div className="d-flex justify-content-start">
@@ -105,6 +107,8 @@ const Footer2 = () => {
                 </a>
               </div>
             </div> */}
+
+            
             <div className="mt-4">
               <h5>Follow Us</h5>
               <div className="d-flex justify-content-start">
@@ -192,24 +196,24 @@ const Footer2 = () => {
             </ul>
           </div>
 
-          {contacts.map((contact) => (
-            <div className="col-md-3 mb-4" key={contact._id}>
+          {/* {contacts.map((contact) => ( */}
+            <div className="col-md-3 mb-4">
               <h5 className="mb-3">Contact Us</h5>
               <address>
-                <strong>{contact.name}</strong>
+                <strong> Chowdeshwari Shakti Peetha Services </strong>
                 <br />
-                {contact.address}
+                Chowdeshwari Layout
                 <br />
-                {contact.city}
+                Bengaluru
                 <br />
-                <a href={`mailto:${contact.email}`} className="text-light">
-                  {contact.email}
+                <a className="text-light">
+                  chowdeshwari@gmail.com
                 </a>
                 <br />
-                {contact.phone}
+                9876543210
               </address>
             </div>
-          ))}
+          {/* ))} */}
         </div>
       </div>
       <p className="footer-copyright">

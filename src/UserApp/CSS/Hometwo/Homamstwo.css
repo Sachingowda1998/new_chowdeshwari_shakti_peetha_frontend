@@ -137,13 +137,13 @@
   }
 }
 
-.puja-categories-card {
+/* .puja-categories-card {
   padding: 5px 20px !important;
 }
 
 .puja-categories-card {
   padding: 5px 30px !important;
-}
+} */
 
 .home-section2 .card {
   background: inherit !important;
@@ -183,9 +183,6 @@
 
 
 
-.puja-categories-main-section{
-  margin-top: 70px;
-}
 
 .puja-categories-main-section .title-main {
   display: flex;

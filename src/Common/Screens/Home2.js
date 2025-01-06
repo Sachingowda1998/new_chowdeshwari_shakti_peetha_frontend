@@ -25,6 +25,7 @@ import Subscribe from "./subscribeList";
 import Sarpa from "./Sarpa";
 import Homams from "./Homam";
 import Tades from "./Tades";
+import rituals from "../ritualdata";
 
 // import TestimonialSection from "../Components/HomeSections/testimonials";
 // import Testimonials from "./Testimonials";
@@ -123,12 +124,36 @@ function Home2() {
   //     items: 1,
   //   },
   // };
+
+  const categories = [
+    {
+      name : "God specific pooja",
+      image : "https://d18guwlcxyb2ak.cloudfront.net/wp-content/uploads/2021/09/10112148/FESTIVAL-SPECIFIC-PUJA.jpg",
+      alttext : "god-specific-pooja",
+    },
+    {
+      name : "All Homas",
+      image : "assetstwo/profile/allhomam.jpg",
+      alttext : "all-homas",
+    },
+    {
+      name : "Sarpa Dosha Pooja",
+      image : "assetstwo/profile/KalaSarpaDosha.png",
+      alttext : "sarpa-dosha-pooja",
+    },
+    {
+      name : "All Tade",
+      image : "assetstwo/profile/AllTades.jpg",
+      alttext : "all-tades",
+    },
+  ]
   return (
     <>
       <div
         style={{
-          backgroundColor: "rgb(244 230 255)",
+          // backgroundColor: "rgb(244 230 255)",
           // backgroundColor: "#FFF4E6",
+          backgroundColor: "#FFD65A",
 
           minHeight: "100vh",
           padding: "20px",
@@ -142,120 +167,63 @@ function Home2() {
 
         {/* puja categories */}
 
-        <section className="puja-categories-main-section">
-          <div className="title-main">
-            {/* <h3 className="merienda" >Welcome to Astrobharati</h3> */}
-            <h3 style={{ color: "#ff6600" }} className="merienda">
-              Puja Categories
-            </h3>
-            <img
-              src="assetstwo/backgroundimages/titleunderline-removebg.png"
-              alt="not found"
-              width={250}
-            />
-          </div>
+        <section className="puja-categories-main-section pt-5">
 
-          <div>
+
+          <div className="mb-5">
             <Row className="home-section2">
-              <Col
+
+<Col xs={12}>
+              <div className="title-main">
+              {/* <h3 className="merienda" >Welcome to Astrobharati</h3> */}
+              <h3 style={{ color: "white" }} className="merienda">
+               Creating blessings, one sacred moment at a time.
+              </h3>
+              <h5 style={{ color: "white" }}>
+              Book your pooja online and be graced with spiritual guidance and sanctified prasada.
+              </h5>
+              <img
+                src="assetstwo/backgroundimages/titleunderline-removebg.png"
+                alt="not found"
+                width={250}
+              />
+              </div>
+</Col>
+              {
+                categories.map((category, index)=>{
+                  return(
+                    <Col
                 xs={12}
                 sm={6}
                 md={4}
                 lg={3}
                 xl={3}
-                className="puja-categories-card"
+                className="puja-categories-card mb-4" key={index}
               >
-                <Card className="mb-3">
+                <Card className="hover-card">
                   <div className="cardimage-body">
                     <Card.Img
                       variant="top"
-                      src="https://d18guwlcxyb2ak.cloudfront.net/wp-content/uploads/2021/09/10112148/FESTIVAL-SPECIFIC-PUJA.jpg"
-                      alt="GOD SPECIFIC PUJA"
+                      src={category.image}
+                      alt={category.alttext}
                       className="card-img-top"
                     />
                   </div>
-                  <Card.Body>
+                  <div className="card-title-overlay"> <h4>{category.name}</h4> </div>
+                  {/* <Card.Body>
                     <Card.Title className="puja-categories-card-title">
-                      God Specific Puja
+                      
                     </Card.Title>
-                  </Card.Body>
+                  </Card.Body> */}
                 </Card>
               </Col>
 
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                lg={3}
-                xl={3}
-                className="puja-categories-card"
-              >
-                <Card className="mb-3">
-                  <div className="cardimage-body">
-                    <Card.Img
-                      variant="top"
-                      src="assetstwo/profile/allhomam.jpg"
-                      alt="Hanuman Puja"
-                      className="card-img-top"
-                    />
-                  </div>
-                  <Card.Body>
-                    <Card.Title className="puja-categories-card-title">
-                    All Homams
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
+                  )
+                })
+              }
 
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                lg={3}
-                xl={3}
-                className="puja-categories-card"
-              >
-                <Card className="mb-3">
-                  <div className="cardimage-body">
-                    <Card.Img
-                      variant="top"
-                      src="assetstwo/profile/KalaSarpaDosha.png"
-                      alt="Hanuman Puja"
-                      className="card-img-top"
-                    />
-                  </div>
-                  <Card.Body>
-                    <Card.Title className="puja-categories-card-title">
-                    Sarpa Dosha
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
 
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                lg={3}
-                xl={3}
-                className="puja-categories-card"
-              >
-                <Card className="mb-3">
-                  <div className="cardimage-body">
-                    <Card.Img
-                      variant="top"
-                      src="assetstwo/profile/AllTades.jpg"
-                      alt="Hanuman Puja"
-                      className="card-img-top"
-                    />
-                  </div>
-                  <Card.Body>
-                    <Card.Title className="puja-categories-card-title">
-                    All Tades
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
+              
             </Row>
           </div>
         </section>
@@ -276,17 +244,73 @@ function Home2() {
           </div>
         </section>
 
-        {/* temple specific puja */}
-       
-        <section className="mt-5">
-          <TempleSpecificPuja />
-        </section>
+
 
         <div className="mt-5">
           <section>
             <Subscribes />
           </section>
         </div>
+
+        {/* temple specific puja */}
+       
+        <section className="mt-5">
+        <div className="mb-5">
+            <Row className="home-section2">
+
+<Col xs={12}>
+              <div className="title-main">
+              {/* <h3 className="merienda" >Welcome to Astrobharati</h3> */}
+              <h3 style={{ color: "white" }} className="merienda">
+               Temple Specific Pooja
+              </h3>
+              <img
+                src="assetstwo/backgroundimages/titleunderline-removebg.png"
+                alt="not found"
+                width={250}
+              />
+              </div>
+</Col>
+              {
+                categories.map((category, index)=>{
+                  return(
+                    <Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={3}
+                className="puja-categories-card mb-4" key={index}
+              >
+                <Card className="hover-card">
+                  <div className="cardimage-body">
+                    <Card.Img
+                      variant="top"
+                      src={category.image}
+                      alt={category.alttext}
+                      className="card-img-top"
+                    />
+                  </div>
+                  
+                  <Card.Body>
+                    <Card.Title>
+                    <h4> God Specific pooja </h4> 
+                    <h5> From Rs 600 </h5>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+                  )
+                })
+              }
+
+
+              
+            </Row>
+          </div>
+        <TempleSpecificPuja />
+        </section>
 
         {/* sarpa dosha */}
         <div className="mt-5">

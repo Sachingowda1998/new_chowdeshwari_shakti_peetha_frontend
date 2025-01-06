@@ -11,32 +11,32 @@ const Footer2 = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchContactsAndSocialMedia = async () => {
-      try {
-        const [contactsResponse, socialMediaResponse] = await Promise.all([
-          axios.get("http://localhost:8000/api/contacts"),
-          // axios.get("http://localhost:8000/api/social-media"),
-        ]);
+  // useEffect(() => {
+  //   const fetchContactsAndSocialMedia = async () => {
+  //     try {
+  //       const [contactsResponse, socialMediaResponse] = await Promise.all([
+  //         axios.get("http://localhost:8000/api/contacts"),
+  //         // axios.get("http://localhost:8000/api/social-media"),
+  //       ]);
 
-        setContacts(contactsResponse.data);
-        // setSocialMediaLinks(socialMediaResponse.data);
-        setLoading(false);
-      } catch (err) {
-        setError("Error fetching data. Please try again later.");
-        console.log(err, "footer");
-        setLoading(false);
-      }
-    };
+  //       setContacts(contactsResponse.data);
+  //       // setSocialMediaLinks(socialMediaResponse.data);
+  //       setLoading(false);
+  //     } catch (err) {
+  //       setError("Error fetching data. Please try again later.");
+  //       console.log(err, "footer");
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchContactsAndSocialMedia();
-  }, []);
-  if (loading) return <p>Loading data...</p>;
-  if (error) return <p>{error}</p>;
+  //   fetchContactsAndSocialMedia();
+  // }, []);
+  // if (loading) return <p>Loading data...</p>;
+  // if (error) return <p>{error}</p>;
 
   return (
     <footer
-      className="bg-dark text-light pt-5 pb-1 position-relative"
+      className="text-light pt-5 pb-1"
       style={{
         backgroundImage: `url('assetstwo/backgroundimages/footerback.jpeg')`,
         backgroundSize: "100% 100%",
@@ -192,24 +192,24 @@ const Footer2 = () => {
             </ul>
           </div>
 
-          {contacts.map((contact) => (
-            <div className="col-md-3 mb-4" key={contact._id}>
-              <h5 className="mb-3">Contact Us</h5>
-              <address>
-                <strong>{contact.name}</strong>
-                <br />
-                {contact.address}
-                <br />
-                {contact.city}
-                <br />
-                <a href={`mailto:${contact.email}`} className="text-light">
-                  {contact.email}
-                </a>
-                <br />
-                {contact.phone}
-              </address>
-            </div>
-          ))}
+          {/* {contacts.map((contact) => ( */}
+            <div className="col-md-3 mb-4">
+            <h5 className="mb-3">Contact Us</h5>
+            <address>
+              <strong> Chowdeshwari Shakti Peetha Services </strong>
+              <br />
+              Chowdeshwari Layout
+              <br />
+              Bengaluru
+              <br />
+              <a className="text-light">
+                chowdeshwari@gmail.com
+              </a>
+              <br />
+              9876543210
+            </address>
+          </div>
+          {/* ))} */}
         </div>
       </div>
       <p className="footer-copyright">

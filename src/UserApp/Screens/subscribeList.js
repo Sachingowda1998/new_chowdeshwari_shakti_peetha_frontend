@@ -87,7 +87,7 @@ const Subscribe = () => {
   return (
     <div className="subscribeListclassname">
       <div class="puja-list-banner px-4 py-4">
-        <img src="assetstwo/banner/deepa.jpg" alt="not found" />
+        <img src="/assetstwo/banner/deepa.jpg" alt="not found" />
         <div className="banner-text">
           <h1>All Subscription List</h1>
           <p>

@@ -1,0 +1,101 @@
+Home2 categories display
+
+<Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={3}
+                className="puja-categories-card"
+              >
+                <Card className="mb-3">
+                  <div className="cardimage-body">
+                    <Card.Img
+                      variant="top"
+                      src="https://d18guwlcxyb2ak.cloudfront.net/wp-content/uploads/2021/09/10112148/FESTIVAL-SPECIFIC-PUJA.jpg"
+                      alt="GOD SPECIFIC PUJA"
+                      className="card-img-top"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="puja-categories-card-title">
+                      <h4> God Specific Puja </h4>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={3}
+                className="puja-categories-card"
+              >
+                <Card className="mb-3">
+                  <div className="cardimage-body">
+                    <Card.Img
+                      variant="top"
+                      src="assetstwo/profile/allhomam.jpg"
+                      alt="Hanuman Puja"
+                      className="card-img-top"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="puja-categories-card-title">
+                    All Homams
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={3}
+                className="puja-categories-card"
+              >
+                <Card className="mb-3">
+                  <div className="cardimage-body">
+                    <Card.Img
+                      variant="top"
+                      src="assetstwo/profile/KalaSarpaDosha.png"
+                      alt="Hanuman Puja"
+                      className="card-img-top"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="puja-categories-card-title">
+                    Sarpa Dosha
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={3}
+                className="puja-categories-card"
+              >
+                <Card className="mb-3">
+                  <div className="cardimage-body">
+                    <Card.Img
+                      variant="top"
+                      src="assetstwo/profile/AllTades.jpg"
+                      alt="Hanuman Puja"
+                      className="card-img-top"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="puja-categories-card-title">
+                    All Tades
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>

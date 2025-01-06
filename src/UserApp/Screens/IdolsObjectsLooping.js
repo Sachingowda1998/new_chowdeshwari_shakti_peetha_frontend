@@ -63,7 +63,7 @@ function IdolsObjectsLoop() {
       }}
     >
     <div class="puja-list-banner">
-        <img src="assetstwo/banner/deepa.jpg" alt="not found"  />
+        <img src="/assetstwo/banner/deepa.jpg" alt="not found"  />
         <div className="banner-text">
           <h1>All Idols</h1>
           <p>

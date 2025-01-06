@@ -13,6 +13,10 @@
   height: 100%;
 }
 
+.home-section2{
+  background-image: url("/public/religiousbackground3.jpg") !important;
+}
+
 .homeclassname .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -155,3 +159,52 @@
 .homeclassname .card-body{
   padding: 0 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.puja-categories-card .hover-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.puja-categories-card .hover-card:hover {
+  transform: scale(1.05);  /* Makes the card pop up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*Optional: Adds a shadow on hover*/
+}
+
+.cardimage-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title-overlay {
+  position: absolute;
+  bottom: 5%; /* Slightly above the lower edge */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+  color: white; /* Ensures the text stands out */
+  padding: 5px 10px;
+  border-radius: 5px; /* Optional: Rounded corners for the text box */
+  text-align: center;  
+}
+
+
+
+
