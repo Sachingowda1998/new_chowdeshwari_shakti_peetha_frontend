@@ -190,7 +190,7 @@ function Home2() {
                 />
                 <div className="card-body bg-light ms-2 mt-2 mb-2">
                   <h5 className="card-title orange-color">{product.name}</h5>
-                  <p> (Includes cost of the ingredients) </p>
+                  <p> (Includes costs of the ingredients) </p>
                   <p className="card-text">From Rs {product.fromPrice}</p>
                   <button className="btn btn-success text-right">View Now</button>
                 </div>
