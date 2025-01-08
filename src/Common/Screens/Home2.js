@@ -27,107 +27,13 @@ import Homams from "./Homam";
 import Tades from "./Tades";
 import rituals from "../ritualdata";
 
-// import TestimonialSection from "../Components/HomeSections/testimonials";
-// import Testimonials from "./Testimonials";
-// import WordsFromDevotees from "./WordsFromDevotees";
-
-// import { pujacategories } from "../Components/HomeSection2/pujacategories";
-// import Carousel from "react-bootstrap/Carousel";
-// import { Row, Col } from "react-bootstrap";
-// import Image from "react-bootstrap/Image";
-
-// import RemedyPujas from "../Components/Home-Sections/Section1";
-// import RemedyPujas2 from "../Components/Home-Sections/Section2";
-
-// import CombinationPujas from "../Components/Home-Sections/Section3";
-// import GodsAndPujas from "../Components/Home-Sections/Section4";
-
-// import UpcomingEvents from "../Components/Home-Sections/UpcomingEvents";
-// import UpcomingPujas from "../Components/Home-Sections/UpcomingEvents";
-
-// const pujaCategories = [
-//   {
-//     id: 1,
-//     title: "God Specific Puja",
-//     imageSrc:
-//       "https://d18guwlcxyb2ak.cloudfront.net/wp-content/uploads/2021/09/10112148/FESTIVAL-SPECIFIC-PUJA.jpg",
-//     altText: "GOD SPECIFIC PUJA",
-//     price: "$50",
-//   },
-//   {
-//     id: 2,
-//     title: "Hanuman Puja",
-//     imageSrc: "assets/Carosuel/hanuman.jpg",
-//     altText: "Hanuman Puja",
-//     price: "$40",
-//   },
-//   {
-//     id: 3,
-//     title: "Lakshmi Puja",
-//     imageSrc: "assets/Carosuel/lakshmi.jpg",
-//     altText: "Lakshmi Puja",
-//     price: "$60",
-//   },
-//   {
-//     id: 4,
-//     title: "Navratri Puja",
-//     imageSrc: "assets/Carosuel/navratri.jpg",
-//     altText: "Navratri Puja",
-//     price: "$75",
-//   },
-//   {
-//     id: 5,
-//     title: "Vastu Puja",
-//     imageSrc: "assets/Carosuel/vaastu.jpg",
-//     altText: "Vastu Puja",
-//     price: "$30",
-//   },
-//   {
-//     id: 6,
-//     title: "Sudarshan Puja",
-//     imageSrc: "assets/Carosuel/sudarshan.jpg",
-//     altText: "Sudarshan Puja",
-//     price: "$45",
-//   },
-//   {
-//     id: 7,
-//     title: "Ganesha Puja",
-//     imageSrc: "assets/Carosuel/ganesha.jpg",
-//     altText: "Ganesha Puja",
-//     price: "$50",
-//   },
-//   {
-//     id: 8,
-//     title: "Satyanarayan Puja",
-//     imageSrc: "assets/Carosuel/satyanarayan.jpg",
-//     altText: "Satyanarayan Puja",
-//     price: "$55",
-//   },
-// ];
 
 function Home2() {
-  // const responsive = {
-  //   superLargeDesktop: {
-  //     breakpoint: { max: 4000, min: 3000 },
-  //     items: 5,
-  //   },
-  //   desktop: {
-  //     breakpoint: { max: 3000, min: 1024 },
-  //     items: 4,
-  //   },
-  //   tablet: {
-  //     breakpoint: { max: 1024, min: 464 },
-  //     items: 2,
-  //   },
-  //   mobile: {
-  //     breakpoint: { max: 464, min: 0 },
-  //     items: 1,
-  //   },
-  // };
+  
 
   const categories = [
     {
-      name : "God specific pooja",
+      name : "God Specific Pooja",
       image : "https://d18guwlcxyb2ak.cloudfront.net/wp-content/uploads/2021/09/10112148/FESTIVAL-SPECIFIC-PUJA.jpg",
       alttext : "god-specific-pooja",
     },
@@ -173,13 +79,13 @@ function Home2() {
           <div className="mb-5">
             <Row className="home-section2">
 
-<Col xs={12}>
+              <Col xs={12}>
               <div className="title-main">
               {/* <h3 className="merienda" >Welcome to Astrobharati</h3> */}
-              <h3 style={{ color: "white" }} className="merienda">
+              <h3 className="merienda orange-color">
                Creating blessings, one sacred moment at a time.
               </h3>
-              <h5 style={{ color: "white" }}>
+              <h5 className="orange-color">
               Book your pooja online and be graced with spiritual guidance and sanctified prasada.
               </h5>
               <img
@@ -188,7 +94,8 @@ function Home2() {
                 width={250}
               />
               </div>
-</Col>
+              </Col>
+
               {
                 categories.map((category, index)=>{
                   return(
@@ -221,9 +128,7 @@ function Home2() {
                   )
                 })
               }
-
-
-              
+ 
             </Row>
           </div>
         </section>
@@ -233,117 +138,84 @@ function Home2() {
           <div className="talktoastoguru-parent">
             <div className="talkoastoguru-child">
               <h3>
-                it's time to choose Right Astrologer for your better future...
+              Your future deserves the right guidance,  Consult our skilled astrologers today.
               </h3>
               <h6>
-                Talk to our experienced Astrologers and get rigth solutions for
-                you problems
+              Get accurate and personalized solutions for all your concerns.
               </h6>
-              <button>CALL US NOW</button>
+              <button>Call Us Now</button>
             </div>
           </div>
         </section>
 
 
 
-        <div className="mt-5">
-          <section>
+        
+          <section className="mt-3 pt-5">
             <Subscribes />
           </section>
+        
+
+        
+          <section>
+  {categories.map((category, catIndex) => {
+    // Filter products belonging to the current category
+    const categoryRituals = rituals.filter(
+      (ritual) => ritual.category === category.name
+    );
+
+    // Shuffle and select 4 random products
+    const shuffledRituals = [...categoryRituals].sort(() => 0.5 - Math.random());
+    const selectedRituals = shuffledRituals.slice(0, 4);
+
+    return (
+      <div key={catIndex} className="mt-5 category-div p-4">
+        <div className="category-header mb-4">
+          <h3 className="merienda orange-color">{category.name}</h3>
+          <img
+            src="assetstwo/backgroundimages/titleunderline-removebg.png"
+            alt="not found"
+            width={250}
+          />
         </div>
 
-        {/* temple specific puja */}
-       
-        <section className="mt-5">
-        <div className="mb-5">
-            <Row className="home-section2">
-
-<Col xs={12}>
-              <div className="title-main">
-              {/* <h3 className="merienda" >Welcome to Astrobharati</h3> */}
-              <h3 style={{ color: "white" }} className="merienda">
-               Temple Specific Pooja
-              </h3>
-              <img
-                src="assetstwo/backgroundimages/titleunderline-removebg.png"
-                alt="not found"
-                width={250}
-              />
+        <div className="row">
+          {selectedRituals.map((product, prodIndex) => (
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={prodIndex}>
+              <div className="card text-center shadow">
+                <img
+                  src={product.image}
+                  className="card-img-top"
+                  alt={product.alttext}
+                />
+                <div className="card-body bg-light ms-2 mt-2 mb-2">
+                  <h5 className="card-title orange-color">{product.name}</h5>
+                  <p> (Includes cost of the ingredients) </p>
+                  <p className="card-text">From Rs {product.fromPrice}</p>
+                  <button className="btn btn-success text-right">View Now</button>
+                </div>
               </div>
-</Col>
-              {
-                categories.map((category, index)=>{
-                  return(
-                    <Col
-                xs={12}
-                sm={6}
-                md={4}
-                lg={3}
-                xl={3}
-                className="puja-categories-card mb-4" key={index}
-              >
-                <Card className="hover-card">
-                  <div className="cardimage-body">
-                    <Card.Img
-                      variant="top"
-                      src={category.image}
-                      alt={category.alttext}
-                      className="card-img-top"
-                    />
-                  </div>
-                  
-                  <Card.Body>
-                    <Card.Title>
-                    <h4> God Specific pooja </h4> 
-                    <h5> From Rs 600 </h5>
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-
-                  )
-                })
-              }
-
-
-              
-            </Row>
-          </div>
-        <TempleSpecificPuja />
-        </section>
-
-        {/* sarpa dosha */}
-        <div className="mt-5">
-          <section>
-            <Sarpa />
-          </section>
+            </div>
+          ))}
         </div>
+      </div>
+    );
+  })}
+</section>
 
 
-        {/* Homams */}
-        <div class="mt-5">
-          <section>
-            <Homams />
-          </section>
-        </div>
 
-        {/* Tades */}
-        <div class="mt-5">
-          <section>
-            <Tades />
-          </section>
-        </div>
+
+
+       
+
+        
 
         {/* Our devotees says about us !!!!! */}
         <div className="mt-5 ourdevotee-main">
           <div className="title-main">
-            <h3
-              style={{
-                color: "#ff6600",
-                fontFamily: "'Merienda One', cursive",
-              }}
-            >
-              Our devotees say about us!!!!!
+            <h3 className="merienda orange-color">
+              Our devotees say this about us!!!!!
             </h3>
 
             <img

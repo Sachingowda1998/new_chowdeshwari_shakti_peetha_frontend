@@ -1,25 +1,25 @@
 // src/data/carouselData.js
 export const carouselData = [
   {
-    backgroundImage: "assets/subsciption/Festival.png",
-    title: "Puja - The Divine Connection",
+    backgroundImage: "/LordGanesha.jpg",
+    title: "Prayer - The Divine Connection",
    
     buttonText: "Talk to astrology",
   },
   {
-    backgroundImage: "assets/Carosuel/LordKrishna.jpg",
+    backgroundImage: "/LordKrishna.jpg",
     title: "Lord Krishna's Blessings",
  
     buttonText: "Book",
   },
   {
-    backgroundImage: "assets/subsciption/Housewarming.png",
+    backgroundImage: "/GoddessLakshmi.jpg",
     title: "Goddess Lakshmi - Goddess of Wealth",
 
     buttonText: "Subscribe",
   },
   {
-    backgroundImage: "assets/Carosuel/Shiva3.jpg",
+    backgroundImage: "/LordShiva.jpg",
     title: "Lord Shiva - The Supreme Lord",
 
     buttonText: "Buy now",

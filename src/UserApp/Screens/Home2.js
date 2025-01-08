@@ -262,7 +262,7 @@ function Home2() {
 
         {/* talk to asroguru */}
         <section className="home2-talktoastoguru-main">
-          <div className="talktoastoguru-parent">
+          <div className="talktoastoguru-parent px-2">
             <div className="talkoastoguru-child">
               <h3>
                 it's time to choose Right Astrologer for your better future...

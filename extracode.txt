@@ -99,3 +99,330 @@ Home2 categories display
                   </Card.Body>
                 </Card>
               </Col>
+
+
+
+All rituals in home page <p>
+
+{/* temple specific puja */}
+       
+        <section className="mt-5">
+        <div className="mb-5">
+            <Row className="home-section2">
+
+<Col xs={12}>
+              <div className="title-main">
+              {/* <h3 className="merienda" >Welcome to Astrobharati</h3> */}
+              <h3 style={{ color: "white" }} className="merienda">
+               Temple Specific Pooja
+              </h3>
+              <img
+                src="assetstwo/backgroundimages/titleunderline-removebg.png"
+                alt="not found"
+                width={250}
+              />
+              </div>
+</Col>
+              {
+                categories.map((category, index)=>{
+                  return(
+                    <Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={3}
+                className="puja-categories-card mb-4" key={index}
+              >
+                <Card className="hover-card">
+                  <div className="cardimage-body">
+                    <Card.Img
+                      variant="top"
+                      src={category.image}
+                      alt={category.alttext}
+                      className="card-img-top"
+                    />
+                  </div>
+                  
+                  <Card.Body>
+                    <Card.Title>
+                    <h4> God Specific pooja </h4> 
+                    <h5> From Rs 600 </h5>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+                  )
+                })
+              }
+
+
+              
+            </Row>
+          </div>
+        <TempleSpecificPuja />
+        </section>
+
+        {/* sarpa dosha */}
+        <div className="mt-5">
+          <section>
+            <Sarpa />
+          </section>
+        </div>
+
+
+        {/* Homams */}
+        <div class="mt-5">
+          <section>
+            <Homams />
+          </section>
+        </div>
+
+        {/* Tades */}
+        <div class="mt-5">
+          <section>
+            <Tades />
+          </section>
+        </div>
+
+
+
+
+// import TestimonialSection from "../Components/HomeSections/testimonials";
+// import Testimonials from "./Testimonials";
+// import WordsFromDevotees from "./WordsFromDevotees";
+
+// import { pujacategories } from "../Components/HomeSection2/pujacategories";
+// import Carousel from "react-bootstrap/Carousel";
+// import { Row, Col } from "react-bootstrap";
+// import Image from "react-bootstrap/Image";
+
+// import RemedyPujas from "../Components/Home-Sections/Section1";
+// import RemedyPujas2 from "../Components/Home-Sections/Section2";
+
+// import CombinationPujas from "../Components/Home-Sections/Section3";
+// import GodsAndPujas from "../Components/Home-Sections/Section4";
+
+// import UpcomingEvents from "../Components/Home-Sections/UpcomingEvents";
+// import UpcomingPujas from "../Components/Home-Sections/UpcomingEvents";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{selectedRituals.map((product, prodIndex) => (
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+              lg={3}
+              xl={3}
+              className="puja-categories-card mb-4"
+              key={prodIndex}
+            >
+              <Card className="hover-card">
+                <div className="cardimage-body">
+                  <Card.Img
+                    variant="top"
+                    src={product.image}
+                    alt={product.alttext}
+                    className="card-img-top"
+                  />
+                </div>
+                <Card.Body>
+                  <Card.Title>
+                    <h4>{product.name}</h4>
+                    <h5>From Rs {product.fromPrice}</h5>
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+
+
+
+
+
+
+
+
+
+.puja-categories-card .hover-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.puja-categories-card .hover-card:hover {
+  transform: scale(1.05);  /* Makes the card pop up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*Optional: Adds a shadow on hover*/
+}
+
+.cardimage-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title-overlay {
+  position: absolute;
+  bottom: 5%; /* Slightly above the lower edge */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+  color: white; /* Ensures the text stands out */
+  padding: 5px 10px;
+  border-radius: 5px; /* Optional: Rounded corners for the text box */
+  text-align: center;  
+}
+
+
+
+
+
+
+
+
+<section>
+  {categories.map((category, catIndex) => {
+    // Filter products belonging to the current category
+    const categoryRituals = rituals.filter(
+      (ritual) => ritual.category === category.name
+    );
+
+    // Shuffle and select 4 random products
+    const shuffledRituals = [...categoryRituals].sort(() => 0.5 - Math.random());
+    const selectedRituals = shuffledRituals.slice(0, 4);
+
+    return (
+      <div key={catIndex}>
+        <Row className="home-section2 mt-5">
+          <Col xs={12}>
+            <div className="title-main">
+              <h3 className="merienda orange-color">
+                {category.name}
+              </h3>
+              <img
+                src="assetstwo/backgroundimages/titleunderline-removebg.png"
+                alt="not found"
+                width={250}
+              />
+            </div>
+          </Col>
+
+          {selectedRituals.map((product, prodIndex) => (
+  <Col
+    xs={12}
+    sm={6}
+    md={4}
+    lg={3}
+    xl={3}
+    className="puja-categories-card2 mb-4 p-4"
+    key={prodIndex}
+  >
+    <Card className="hover-card2">
+      <div className="cardimage-body2">
+        <Card.Img
+          variant="top"
+          src={product.image}
+          alt={product.alttext}
+          className="card-img-top2"
+        />
+        <button className="book-now-btn">Book Now</button>
+      </div>
+      <Card.Body className="card-text-body2">
+        <Card.Title>
+          <h4 className="orange-color">{product.name}</h4>
+          <h5 className="orange-color">From Rs {product.fromPrice}</h5>
+        </Card.Title>
+      </Card.Body>
+    </Card>
+  </Col>
+))}
+
+        </Row>
+      </div>
+
+      
+
+      
+    );
+  })}
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+  {categories.map((category, catIndex) => {
+    // Filter products belonging to the current category
+    const categoryRituals = rituals.filter(
+      (ritual) => ritual.category === category.name
+    );
+
+    // Shuffle and select 4 random products
+    const shuffledRituals = [...categoryRituals].sort(() => 0.5 - Math.random());
+    const selectedRituals = shuffledRituals.slice(0, 4);
+
+    return (
+      <div key={catIndex} className="mt-5">
+        <div className="text-center mb-4">
+          <h3 className="text-warning">{category.name}</h3>
+          <img
+            src="assetstwo/backgroundimages/titleunderline-removebg.png"
+            alt="not found"
+            width={250}
+          />
+        </div>
+
+        <div className="row">
+          {selectedRituals.map((product, prodIndex) => (
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={prodIndex}>
+              <div className="card text-center shadow">
+                <img
+                  src={product.image}
+                  className="card-img-top"
+                  alt={product.alttext}
+                />
+                <div className="card-body p-3">
+                  <h5 className="card-title text-warning">{product.name}</h5>
+                  <p className="card-text">From Rs {product.fromPrice}</p>
+                  <button className="btn btn-primary">Book Now</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  })}
+</section>

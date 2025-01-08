@@ -24,7 +24,7 @@
 .carousel-caption {
     position: absolute;
     /* top: 20%; */
-    bottom: 5%;
+    bottom: 25%;
     left: 2% !important;
     padding: 1rem;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -37,8 +37,8 @@
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
   }
   
-  .carousel-caption h3 {
-    font-size: 54px;
+  .carousel-caption-title {
+    /* font-size: 54px; */
     margin-bottom: 0.5rem;
     font-family: "Poppins", sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -52,7 +52,7 @@
   }
   
   .carousel-btn {
-    background-color: #ff9933;
+    /* background-color: #ff9933;
     border-color: #ff9933;
     padding: 10px 20px;
     border: none;
@@ -60,14 +60,14 @@
     cursor: pointer;
     transition: background-color 0.3s;
     font-family: "Poppins", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
    
   }
   
-  .carousel-btn:hover {
+  /* .carousel-btn:hover {
     background-color: #ff9933;
   }
-  
+   */
 
   
   @media (max-width: 768px) {

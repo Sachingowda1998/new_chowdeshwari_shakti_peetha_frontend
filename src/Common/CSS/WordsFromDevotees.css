@@ -118,7 +118,7 @@
     flex: 1 1 300px;
     font-family: "Roboto", sans-serif;
     color: #333;
-    text-align: left;
+    /* text-align: left; */
   }
   
   .devotee-title {

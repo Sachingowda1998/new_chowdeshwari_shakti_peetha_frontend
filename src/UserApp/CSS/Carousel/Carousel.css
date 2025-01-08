@@ -24,7 +24,7 @@
 .carousel-caption {
     position: absolute;
     /* top: 20%; */
-    bottom: 5%;
+    bottom: 25%;
     left: 2% !important;
     padding: 1rem;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -37,8 +37,8 @@
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
   }
   
-  .carousel-caption h3 {
-    font-size: 54px;
+  .carousel-caption-title {
+    /* font-size: 54px; */
     margin-bottom: 0.5rem;
     font-family: "Poppins", sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

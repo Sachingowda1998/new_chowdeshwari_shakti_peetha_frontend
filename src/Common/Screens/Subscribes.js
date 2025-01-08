@@ -77,7 +77,7 @@ const Subscribes = () => {
   return (
     <div className="subscribe-classname">
       <div className="subscribe-title">
-        <h3 className="subscribe-heading">Subscribe</h3>
+        <h3 className="merienda orange-color">Subscribe To Our Wide Range Of Devotee Services</h3>
         <img
           src="assetstwo/backgroundimages/titleunderline-removebg.png"
           alt="not found"

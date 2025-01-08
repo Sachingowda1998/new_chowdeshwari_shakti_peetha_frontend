@@ -6,7 +6,6 @@
   font-family: Arial, sans-serif;
   padding: 10px;
   margin: 20px;
-  background-image: url("/public/assetstwo/backgroundimages/devotee.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,17 +14,24 @@
   /* text-align: center; */
 }
 
-.devotee-container .carousel-root {
-  background-color: white !important;
-  padding-top: 20px !important;
+/* .devotee-container .carousel-root {
+  background-color: rgb(245, 161, 83);
+  padding : 20px !important;
   height: 220px !important;
+} */
+
+.devotee-container .carousel-root {
+/* background-color: rgb(238, 235, 232) !important; */
+background-image: url("/public/assetstwo/backgroundimages/devotee.png");
+padding: 20px !important;
+height: 220px !important;
 }
 
 .devotee-heading {
-  font-size: 24px;
+  font-size: 35px;
   /* font-weight: bold; */
-  margin-bottom: 20px;
-  color: black;
+  margin-bottom: 10px;
+  color: #572503;
   font-family: "Indie Flower", cursive;
 }
 
@@ -35,14 +41,14 @@
   line-height: 1.6;
   /* font-family: "Edu AU VIC WA NT Pre", cursive; */
   margin: 10px 0;
-  color: black;
+  color: #572503
 }
 
 .devotee-author {
   font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
-  color: black;
+  color: #572503;
 }
 
 /* .devotee-carousel {

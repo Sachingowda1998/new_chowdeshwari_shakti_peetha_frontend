@@ -1,0 +1,79 @@
+// const pujaCategories = [
+//   {
+//     id: 1,
+//     title: "God Specific Puja",
+//     imageSrc:
+//       "https://d18guwlcxyb2ak.cloudfront.net/wp-content/uploads/2021/09/10112148/FESTIVAL-SPECIFIC-PUJA.jpg",
+//     altText: "GOD SPECIFIC PUJA",
+//     price: "$50",
+//   },
+//   {
+//     id: 2,
+//     title: "Hanuman Puja",
+//     imageSrc: "assets/Carosuel/hanuman.jpg",
+//     altText: "Hanuman Puja",
+//     price: "$40",
+//   },
+//   {
+//     id: 3,
+//     title: "Lakshmi Puja",
+//     imageSrc: "assets/Carosuel/lakshmi.jpg",
+//     altText: "Lakshmi Puja",
+//     price: "$60",
+//   },
+//   {
+//     id: 4,
+//     title: "Navratri Puja",
+//     imageSrc: "assets/Carosuel/navratri.jpg",
+//     altText: "Navratri Puja",
+//     price: "$75",
+//   },
+//   {
+//     id: 5,
+//     title: "Vastu Puja",
+//     imageSrc: "assets/Carosuel/vaastu.jpg",
+//     altText: "Vastu Puja",
+//     price: "$30",
+//   },
+//   {
+//     id: 6,
+//     title: "Sudarshan Puja",
+//     imageSrc: "assets/Carosuel/sudarshan.jpg",
+//     altText: "Sudarshan Puja",
+//     price: "$45",
+//   },
+//   {
+//     id: 7,
+//     title: "Ganesha Puja",
+//     imageSrc: "assets/Carosuel/ganesha.jpg",
+//     altText: "Ganesha Puja",
+//     price: "$50",
+//   },
+//   {
+//     id: 8,
+//     title: "Satyanarayan Puja",
+//     imageSrc: "assets/Carosuel/satyanarayan.jpg",
+//     altText: "Satyanarayan Puja",
+//     price: "$55",
+//   },
+// ];
+
+
+// const responsive = {
+  //   superLargeDesktop: {
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5,
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 4,
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2,
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1,
+  //   },
+  // };

@@ -77,10 +77,10 @@
   height: 350px;
 }
 
-.masonry-grid {
+/* .masonry-grid {
   display: flex;
   margin-left: -15px;
-}
+} */
 
 .masonry-grid_column {
   padding-left: 15px;

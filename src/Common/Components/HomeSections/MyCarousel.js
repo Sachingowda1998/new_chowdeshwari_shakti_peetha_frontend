@@ -68,10 +68,10 @@ const MyCarousel = () => {
           }}
         >
           <div className="carousel-caption">
-            <h3 style={{ color: "white" }}>{item.title}</h3>
+            <h1 className="carousel-caption-title text-white">{item.title}</h1>
 
             <button
-              className="carousel-btn"
+              className="carousel-btn btn text-white"
               onClick={() => navigate(buttonTypeMap[item.buttonText])}
             >
               {item.buttonText}

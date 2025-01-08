@@ -30,13 +30,13 @@ function NavTab() {
 
         <Nav className=" pt-2 " activeKey="/home">
           <Nav.Item>
-            <Nav.Link as={Link} to="/" className="navlinkscstome">
+            <Nav.Link as={Link} to="/" className="navlinkscstome orange-color">
               Home
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link as={Link} to="/objectsofpuja" className="navlinkscstome">
+            <Nav.Link as={Link} to="/objectsofpuja" className="navlinkscstome orange-color">
               All Poojas
             </Nav.Link>
           </Nav.Item>
@@ -44,19 +44,19 @@ function NavTab() {
             <Nav.Link
               as={Link}
               to="/idolsobjectsloop"
-              className="navlinkscstome"
+              className="navlinkscstome orange-color"
             >
               Shops
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to="/talktoastroguru" className="navlinkscstome">Astro guru</Nav.Link>
+            <Nav.Link as={Link} to="/talktoastroguru" className="navlinkscstome orange-color">Astro guru</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to="/subscribe"   className="navlinkscstome">Subscribe</Nav.Link>
+            <Nav.Link as={Link} to="/subscribe"   className="navlinkscstome orange-color">Subscribe</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to="/imagedisplay"  className="navlinkscstome">Gallery</Nav.Link>
+            <Nav.Link as={Link} to="/imagedisplay"  className="navlinkscstome orange-color">Gallery</Nav.Link>
           </Nav.Item>     
         </Nav>
       </div>

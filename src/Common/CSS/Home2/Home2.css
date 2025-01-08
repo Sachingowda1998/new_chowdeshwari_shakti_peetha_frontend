@@ -103,7 +103,7 @@
   position: absolute;
   right: 2%;
   width: 500px;
-  bottom: 2%;
+  bottom: 10%;
 }
 
 .home2-talktoastoguru-main .talkoastoguru-child h3{
@@ -175,6 +175,80 @@
 
 
 
+
+
+/* For card hover effect */
+.puja-categories-card2 .hover-card2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.puja-categories-card2 .hover-card2:hover {
+  transform: scale(1.05); /* Makes the card pop up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+/* Card image container */
+.cardimage-body2 {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card image */
+.card-img-top2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* White background for card text */
+.card-text-body2 {
+  background-color: white; /* White background for the text */
+  padding: 10px; /* Optional: Padding for better spacing */
+  border-top: 1px solid #ddd; /* Optional: Subtle border to separate text from image */
+}
+
+/* Book Now button */
+.book-now-btn {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Align center */
+  /* background-color: #cc580b;  */
+  background-color: #572503;
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1; /* Ensure it appears above the image */
+}
+
+/* Show button on hover */
+.cardimage-body2:hover .book-now-btn {
+  opacity: 1; /* Visible on hover */
+}
+
+/* Add hover effect for the button */
+/* .book-now-btn:hover {
+  background-color: #cc580b; 
+} */
+
+.orange-color{
+  color : #572503 !important;
+}
+
+
+
+
+
+
+
+
+
+
 .puja-categories-card .hover-card {
   transition: transform 0.3s ease-in-out;
 }
@@ -203,6 +277,18 @@
   padding: 5px 10px;
   border-radius: 5px; /* Optional: Rounded corners for the text box */
   text-align: center;  
+} 
+
+
+
+
+.category-header{
+  text-align: center !important;
+}
+
+
+.category-div{
+  background-image: url("/public/religiousbackground3.jpg") !important;
 }
 
 
