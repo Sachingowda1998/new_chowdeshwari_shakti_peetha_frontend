@@ -38,7 +38,7 @@ function Sidebar2({ onToggleSidebar }) {
         ) : (
           <>
             <i className="bi bi-bootstrap-fill me-2 fs-4"></i>
-            <span className="brand-name fs-4">Puja</span>
+            <span className="brand-name fs-4"> Admin Panel </span>
             <span
               onClick={toggleSidebar}
               style={{
@@ -60,14 +60,14 @@ function Sidebar2({ onToggleSidebar }) {
       <hr className="text-dark" />
 
       <div className="list-group list-group-flush">
-        <Link to="/admin/v1/dashboard" className="list-group-item py-2">
+        <Link to="/admin/websitedetails" className="list-group-item py-2">
           <i className="bi bi-speedometer2 fs-5 me-3"></i>
-          {!isCollapsed && <span>DashBoard</span>}
+          {!isCollapsed && <span> Website Details </span>}
         </Link>
 
         <Link to="/admin/v1/user" className="list-group-item py-2">
           <i className="bi bi-people fs-5 me-3"></i>
-          {!isCollapsed && <span>User</span>}
+          {!isCollapsed && <span> User </span>}
         </Link>
         <Link
           to="/admin/v1/adminpujacategories"

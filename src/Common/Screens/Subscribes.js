@@ -111,17 +111,17 @@ const Subscribes = () => {
               <div key={event.id}>
                 <div className="test-inner-body" >
                   <div>
-                    <p className="display-4">{event.title}</p>
-                    <p className="lead text-muted">{event.subtitle}</p>
-                    <p className="text-muted">{event.description}</p>
-                    <p className="font-weight-bold">
+                    <p className="display-4 mb-4">{event.title}</p>
+                    <p className="lead text-muted mb-3">{event.subtitle}</p>
+                    <p className="text-muted mb-2">{event.description}</p>
+                    <p className="font-weight-bold mb-2">
                       Friday {event.dateTime.friday} Saturday{" "}
                       {event.dateTime.saturday}
                     </p>
-                    <p className="font-weight-bold text-muted">
+                    <p className="font-weight-bold text-muted mb-2">
                       {event.location}
                     </p>
-                    <Button variant="primary" size="lg" className="mt-1">
+                    <Button variant="success" size="lg" className="mt-1">
                       Visit Now!
                     </Button>
                   </div>

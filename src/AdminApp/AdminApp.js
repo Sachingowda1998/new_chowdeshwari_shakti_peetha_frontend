@@ -12,6 +12,9 @@ import Sidebar2 from "./components/Sidebar2";
 import { AppProvider } from "./components/AppContext";
 import Header from "./components/Nav";
 import "./adminindex.css";
+import WebsiteDetails from "./components/WebsiteDetails";
+import AddWebsiteDetailsPage from "./components/AddWebsiteDetails";
+import EditWebsiteDetailsPage from "./components/EditWebsiteDetails";
 
 
 const Home = React.lazy(() => import("./components/Home"));
@@ -35,6 +38,7 @@ const SocialMediaLinks = React.lazy(() =>
   import("./components/Company/SocialMediaLinks")
 );
 
+
 const NotFound = () => {
   return <div>Page not found.admin The URL you requested does not exist.</div>;
 };
@@ -51,6 +55,9 @@ function AdminApp() {
             {/* Routes */}
             <Routes>
               <Route path="/" exact element={<Home />} />
+              <Route path="/websitedetails" exact element={<WebsiteDetails />} />
+              <Route path="/addwebsitedetails" exact element={<AddWebsiteDetailsPage />} />
+              <Route path="/editwebsitedetails" exact element={<EditWebsiteDetailsPage />} />
               <Route path="/v1/dashboard" exact element={<Dashboard />} />
               <Route path="/v1/user" exact element={<User />} />
           

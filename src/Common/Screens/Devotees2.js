@@ -12,35 +12,35 @@ const Devotees2 = () => {
       title: "Maha Mrityunjay Puja",
       description:
         "Devotee of the temple, Indian. I performed the Maha Mrityunjay Puja with complete devotion, seeking blessings for my family’s health and prosperity.",
-      location: "Indian",
+      name: "Ganesh Bhat",
     },
     {
       id: 2,
       title: "Maha Mrityunjay Puja",
       description:
         "Indian devotee of the temple. As a devotee, I performed this sacred ritual to invoke divine blessings for the well-being of my loved ones and the community.",
-      location: "Indian",
+      name: "Ganesh Bhat",
     },
     {
       id: 3,
       title: "Maha Mrityunjay Puja",
       description:
         "Devotee of the temple. I performed the ritual with sincere prayers to protect my family from any harm and to bring peace and prosperity to our lives.",
-      location: "Indian",
+      name: "Ganesh Bhat",
     },
     {
       id: 4,
       title: "Maha Mrityunjay Puja",
       description:
         "Indian devotee of the temple, seeking blessings. With a heart full of gratitude, I offered prayers for the health and success of my family, and for the peace of all beings.",
-      location: "Indian",
+      name: "Ganesh Bhat",
     },
     {
       id: 5,
       title: "Maha Mrityunjay Puja",
       description:
         "A devotee of the temple, from India, offering prayers. I performed the puja with utmost faith, seeking the grace of Lord Shiva to remove obstacles and bring harmony into our lives.",
-      location: "Indian",
+      name: "Ganesh Bhat",
     },
   ];
 
@@ -58,7 +58,7 @@ const Devotees2 = () => {
           <div key={item.id}>
             <div className="devotee-heading">{item.title}</div>
             <p className="devotee-paragraph">{item.description}</p>
-            <div className="devotee-author">{item.location}</div>
+            <div className="devotee-author">{item.name}</div>
           </div>
         ))}
       </Carousel>

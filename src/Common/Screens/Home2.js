@@ -189,9 +189,11 @@ function Home2() {
                   alt={product.alttext}
                 />
                 <div className="card-body bg-light ms-2 mt-2 mb-2">
-                  <h5 className="card-title orange-color">{product.name}</h5>
-                  <p> (Includes costs of ingredients) </p>
-                  <p className="card-text">From Rs {product.fromPrice}</p>
+                  <h5 className="card-title orange-color">
+                  {product.name.length > 25 ? `${product.name.substring(0, 25)}...` : product.name}
+                  </h5>
+                  <p className="text-success"> (Includes costs of ingredients) </p>
+                  <p className="card-text fs-5">From Rs <b className="text-success fw-normal"> {product.fromPrice} </b> </p>
                   <button className="btn btn-success text-right">View Now</button>
                 </div>
               </div>
