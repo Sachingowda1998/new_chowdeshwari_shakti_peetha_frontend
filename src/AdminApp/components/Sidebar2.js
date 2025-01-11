@@ -65,17 +65,32 @@ function Sidebar2({ onToggleSidebar }) {
           {!isCollapsed && <span> Website Details </span>}
         </Link>
 
-        <Link to="/admin/v1/user" className="list-group-item py-2">
-          <i className="bi bi-people fs-5 me-3"></i>
-          {!isCollapsed && <span> User </span>}
+        <Link to="/admin/maincarousel" className="list-group-item py-2">
+          <i className="bi bi-speedometer2 fs-5 me-3"></i>
+          {!isCollapsed && <span> Main Carousel </span>}
         </Link>
+
         <Link
           to="/admin/v1/adminpujacategories"
           className="list-group-item py-2"
         >
           <i className="bi bi-tags fs-5 me-3"></i>
-          {!isCollapsed && <span>Category</span>}
+          {!isCollapsed && <span> Categories </span>}
         </Link>
+
+        <Link
+          to="/admin/v1/adminpujacategories"
+          className="list-group-item py-2"
+        >
+          <i className="bi bi-tags fs-5 me-3"></i>
+          {!isCollapsed && <span> Rituals </span>}
+        </Link>
+
+        <Link to="/admin/v1/user" className="list-group-item py-2">
+          <i className="bi bi-people fs-5 me-3"></i>
+          {!isCollapsed && <span> User </span>}
+        </Link>
+
         <Link to="/admin/v1/adminsubcategory" className="list-group-item py-2">
           <i className="bi bi-tag fs-5 me-3"></i>
           {!isCollapsed && <span>SubCategory</span>}

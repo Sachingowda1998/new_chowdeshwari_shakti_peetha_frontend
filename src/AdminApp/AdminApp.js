@@ -15,6 +15,9 @@ import "./adminindex.css";
 import WebsiteDetails from "./components/WebsiteDetails";
 import AddWebsiteDetailsPage from "./components/AddWebsiteDetails";
 import EditWebsiteDetailsPage from "./components/EditWebsiteDetails";
+import MainCarousel from "./components/MainCarousel";
+import AddMainCarousel from "./components/AddMainCarousel";
+import EditMainCarousel from "./components/EditMainCarousel";
 
 
 const Home = React.lazy(() => import("./components/Home"));
@@ -58,6 +61,9 @@ function AdminApp() {
               <Route path="/websitedetails" exact element={<WebsiteDetails />} />
               <Route path="/addwebsitedetails" exact element={<AddWebsiteDetailsPage />} />
               <Route path="/editwebsitedetails" exact element={<EditWebsiteDetailsPage />} />
+              <Route path="/maincarousel" exact element={<MainCarousel />} />
+              <Route path="/addmaincarousel" exact element={<AddMainCarousel />} />
+              <Route path="/editmaincarousel" exact element={<EditMainCarousel />} />
               <Route path="/v1/dashboard" exact element={<Dashboard />} />
               <Route path="/v1/user" exact element={<User />} />
           
