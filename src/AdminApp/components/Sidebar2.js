@@ -71,7 +71,7 @@ function Sidebar2({ onToggleSidebar }) {
         </Link>
 
         <Link
-          to="/admin/v1/adminpujacategories"
+          to="/admin/categories"
           className="list-group-item py-2"
         >
           <i className="bi bi-tags fs-5 me-3"></i>
@@ -79,7 +79,7 @@ function Sidebar2({ onToggleSidebar }) {
         </Link>
 
         <Link
-          to="/admin/v1/adminpujacategories"
+          to="/admin/rituals"
           className="list-group-item py-2"
         >
           <i className="bi bi-tags fs-5 me-3"></i>

@@ -18,6 +18,14 @@ import EditWebsiteDetailsPage from "./components/EditWebsiteDetails";
 import MainCarousel from "./components/MainCarousel";
 import AddMainCarousel from "./components/AddMainCarousel";
 import EditMainCarousel from "./components/EditMainCarousel";
+import Categories from "./components/AdminPujaCategories";
+import AddCategory from "./components/AddCategory";
+import EditCategory from "./components/EditCategory";
+import Subcategories from "./components/Subcategories";
+import AddSubcategory from "./components/AddSubcategory";
+import Rituals from "./components/Rituals";
+import AddRitual from "./components/AddRitual";
+import Products from "./components/Products";
 
 
 const Home = React.lazy(() => import("./components/Home"));
@@ -64,6 +72,16 @@ function AdminApp() {
               <Route path="/maincarousel" exact element={<MainCarousel />} />
               <Route path="/addmaincarousel" exact element={<AddMainCarousel />} />
               <Route path="/editmaincarousel" exact element={<EditMainCarousel />} />
+              <Route path="/categories" element={<AdminPujaCategories />} />
+              <Route path="/addcategory" element={<AddCategory />} />
+              <Route path="/editcategory/:id" element={<EditCategory />} />
+              <Route path="/categories/:id/subcategories" element={<Subcategories />} />
+              <Route path="/categories/:id/add-subcategory" element={<AddSubcategory />} />
+              <Route path="/rituals" element={<Rituals />} />
+              <Route path="/addritual" element={<AddRitual />} />
+              <Route path="/products" element={<Products />} />
+
+
               <Route path="/v1/dashboard" exact element={<Dashboard />} />
               <Route path="/v1/user" exact element={<User />} />
           
@@ -74,7 +92,7 @@ function AdminApp() {
               <Route path="/v1/banner" element={<Banner />} />
               <Route path="/v1/editbannerform" element={<EditBannerForm />} />
               <Route path="/v1/addbanner" element={<AddBanner />} />
-              <Route path="/v1/adminpujacategories" element={<AdminPujaCategories />} />
+              
               <Route path="/v1/adminsubcategory" element={<AdminSubCategory />} />
               <Route path="/v1/adminpujaservice" element={<AdminPujaService />} />
               <Route path="/v1/admineditpuja" element={<AdminEditPuja />} />

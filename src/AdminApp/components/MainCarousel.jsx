@@ -49,7 +49,7 @@ const MainCarousel = () => {
               {["image1", "image2", "image3"].map((key, idx) => (
                 <img
                   key={idx}
-                  src={`/${carouselData[key]}`}
+                  src={`${process.env.REACT_APP_BACKEND_URL}/${carouselData[key]}`}
                   alt={`Carousel ${idx + 1}`}
                   className="img-thumbnail me-2"
                   style={{ width: "150px", height: "100px" }}
